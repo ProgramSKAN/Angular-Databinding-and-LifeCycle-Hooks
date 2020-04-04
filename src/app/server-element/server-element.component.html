@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading" #heading>
+    <h3 class="panel-title">{{element.name}}</h3>
+    {{name}}
+  </div>
+  <div class="panel-body">
+    <!-- <p>
+      <strong *ngIf="element.type==='server'" style="color: red;">{{element.content}}</strong>
+      <em *ngIf="element.type==='blueprint'">{{element.content}}</em>
+    </p> -->
+    <ng-content></ng-content>
+    <!-- anything placed inside opening and closing tag of this componenet selector, place it here in ng-content.else angular removes it -->
+  </div>
+</div>
